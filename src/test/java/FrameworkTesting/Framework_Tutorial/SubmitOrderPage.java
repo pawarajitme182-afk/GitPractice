@@ -34,6 +34,8 @@ public class SubmitOrderPage extends BaseTest {
 
 	@Test(dataProvider = "getData", groups = "Purchase")
 
+	//Testing for git
+
 	public void submotorder(HashMap<String, String> input) throws IOException {
 
 		landingpage.landingApp(input.get("email"), input.get("password"));
