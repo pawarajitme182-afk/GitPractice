@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="FrameworkTesting.test.Listerners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="test2(failed)" verbose="0">
+    <classes>
+      <class name="FrameworkTesting.Framework_Tutorial.ErrorValidation">
+        <methods>
+          <include name="LoginpageError"/>
+          <include name="cartErrorValidation"/>
+          <include name="tearDown"/>
+          <include name="launchapp"/>
+        </methods>
+      </class> <!-- FrameworkTesting.Framework_Tutorial.ErrorValidation -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Submit order test(failed)" verbose="0">
+    <classes>
+      <class name="FrameworkTesting.Framework_Tutorial.SubmitOrderPage">
+        <methods>
+          <include name="submotorder"/>
+          <include name="tearDown"/>
+          <include name="launchapp"/>
+          <include name="orderHistoryTest"/>
+        </methods>
+      </class> <!-- FrameworkTesting.Framework_Tutorial.SubmitOrderPage -->
+    </classes>
+  </test> <!-- Submit order test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
